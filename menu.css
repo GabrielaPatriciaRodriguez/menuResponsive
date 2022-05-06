@@ -1,0 +1,131 @@
+/* HEADER */
+header {
+    background-color: #060606;
+    position: fixed;
+    z-index: 10;
+    max-width: 1440px;
+  }
+  
+  section[id] {
+    scroll-margin-top: 60px;
+  }
+  
+  .encabezado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .encabezado-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #060606;
+    padding-bottom: 0;
+  }
+  
+  .divLogoCel {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    padding-left: 4rem;
+  }
+  
+  .spanMov {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.5rem;
+  }
+  
+  .spanMoviles {
+    color: #fbf8f9;
+    font-size: 10px;
+  }
+  
+  
+  .divLista {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    align-items: center;
+    padding-right: 2rem;
+  }
+  
+  .lista {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .lista-item {
+    color: #fbf8f9;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+  }
+  
+  .selected {
+    color: #f26531;
+  }
+  
+  .lista-item:hover {
+    color: #ffb35a;
+  }
+  
+  .selected:hover{
+    color: #f26531;
+  }
+  
+  /* Para que en movil y tablet se muestren en columna y el scroll margin sea diferente*/
+  @media screen and (max-width: 768px) {
+    header {
+      background-color: #060606;
+    }
+  
+    section[id] {
+      scroll-margin-top: -60px;
+    }
+  
+    section[id="portada"] {
+      scroll-margin-top: 0px;
+    }
+  
+    .encabezado-nav {
+      background-color: #060606;
+    }
+  
+    .divLogoCel{
+      padding-left: 0;
+    }
+  
+    .spanMov {
+      padding-top: 0.8rem;
+    }
+  
+    .encabezado-logo{
+      height: 44px;
+      width: 36px;
+    }
+  
+    .divLista {
+      justify-content: center;
+      padding-bottom: 2rem;
+    }
+  
+    .lista {
+      flex-direction: column;
+      padding: 0rem;
+      margin: 0rem;
+    }
+    .lista-li {
+      padding-top: 1rem;
+    }
+  }
+  

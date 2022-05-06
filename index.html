@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Responsive</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./menu.css" />
+
+  <script defer src="./menuActivo.js"></script>
+  
+</head>
+
+<body>
+  <!-- *******************ENCABEZADO******************* -->
+
+  <header class="encabezado">
+    <!-- menu navegable -->
+    <nav class="navbar navbar-expand-lg navbar-dark encabezado-nav">
+      <div class="container">
+        <!-- Logo navegable -->
+        <div class="divLogoCel">
+          <a class="navbar-brand" href="#portada"><img class="encabezado-logo"
+              src="https://res.cloudinary.com/gabycoderhouse/image/upload/v1649787520/solucionesGerman/00_Logo_ceaqum.png"
+              alt="logo" width="51px" height="61px" /></a>
+
+          <div class="spanMov">
+            <span class="spanMoviles">SOLUCIONES</span>
+            <span class="spanMoviles">GERMAN</span>
+          </div>
+        </div>
+        <!-- Utilizando las clases de Bootstrap - Menu Hamburguesa en dispositivos mas chicos -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse divLista" id="navbarNav">
+          <ul class="lista">
+            <li class="lista-li">
+              <a href="#portada" class="lista-item selected">Inicio</a>
+            </li>
+            <li class="lista-li">
+              <a href="#servicios" class="lista-item">Servicios</a>
+            </li>
+            <li class="lista-li">
+              <a href="#trabajos" class="lista-item">Trabajos</a>
+            </li>
+            <li class="lista-li">
+              <a href="#nosotros" class="lista-item">Nosotros</a>
+            </li>
+            <li class="lista-li">
+              <a href="#contacto" class="lista-item">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
